@@ -1,0 +1,9 @@
+package kr.co.util;
+
+
+
+public class Utils {
+	public static String toKor(String msg) {  //한글 인코딩 필요할때마다 메서드 호출 
+		return new String(msg.getBytes("8859-1"), "UTF-8");
+	}
+}

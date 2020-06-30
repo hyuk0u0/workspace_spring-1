@@ -1,0 +1,15 @@
+package kr.co.service;
+
+import javax.inject.Inject;
+
+import org.springframework.stereotype.Service;
+
+import kr.co.persistence.MemberDAO;
+
+@Service  //객체가 된다. 
+public class MemberServiceImpl implements MemberService {
+
+	@Inject
+	private MemberDAO memberDAO;
+	
+}

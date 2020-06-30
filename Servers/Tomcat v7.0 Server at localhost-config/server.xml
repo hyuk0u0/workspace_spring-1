@@ -63,7 +63,7 @@
          Define a non-SSL HTTP/1.1 Connector on port 8089
     -->
     <!-- 한글인코딩 편하게 하기위해서!! 겟방식! 이거 안하려면 클래스에 한글변환 메서드 만들어 필요할때마다 호출하기.  -->
-    <Connector URIEncoding="UTF-8"  connectionTimeout="20000" port="8089" protocol="HTTP/1.1" redirectPort="8443"/>
+    <Connector URIEncoding="UTF-8" connectionTimeout="20000" port="8089" protocol="HTTP/1.1" redirectPort="8443"/>
     <!-- A "Connector" using the shared thread pool-->
     <!--
     <Connector executor="tomcatThreadPool"
@@ -131,7 +131,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log." suffix=".txt"/>
 
-      <Context docBase="World_200630" path="/ca" reloadable="true" source="org.eclipse.jst.jee.server:World_200630"/></Host>
+      <Context docBase="World_200630" path="/" reloadable="true" source="org.eclipse.jst.jee.server:World_200630"/></Host>
     </Engine>
   </Service>
 </Server>
